@@ -17,7 +17,7 @@ header{
 }
 
 .modal{
-    display: none; /*cambiar a block */
+    display: none; /*cambiar a block para ver fijo */
     position: absolute;
     top: 50%;
     left: 50%;
