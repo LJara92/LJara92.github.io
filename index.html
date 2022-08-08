@@ -139,16 +139,35 @@
                 </div>
             </div>
         </div>
+        <div class="location">
+            <div id="ip"></div>
+            <div id="address"></div>
+            <div id="region"></div>
+            <div id="postal"></div>
+            <div id="org"></div>
+            <div id="location"></div>
+        </div>
     </div>
     </header>
     <footer>
         <div class="copyright">
             <h4>Hecho por &copy; Lautaro Jara</h4>
         </div>
+       
     </footer>    
     <script src="js/maquinaEscribir.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="js/particulas.js"></script>
     <script src="js/ventana.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $.get("https://ipinfo.io/json", function (response) {
+        $("#ip").html("IP: " + response.ip);
+        $("#address").html(response.city + ", CP" + response.postal + ", "+ response.region);
+        $("#location").html(response.loc);
+        $("#org").html(response.org);
+        }, "jsonp");
+    </script>
     </body>
 </html>
+
