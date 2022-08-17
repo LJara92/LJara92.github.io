@@ -23,3 +23,12 @@
     font-size: small;
     z-index: 2;
 }
+
+.location {
+    color: #FAFAFA;
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
