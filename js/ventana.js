@@ -4,7 +4,7 @@ let abrir = document.getElementById('abrir')
 let cerrar = document.getElementById('close')
 
 abrir.addEventListener('click', function(){
-    document.getElementById('imagenExploit').src = 'imagenes/Under_contruction.jpg'
+    document.getElementById('imagenExploit').src = 'imagenes/Under_contruction.jpeg'
     modal.style.display = 'block';
 })
 
