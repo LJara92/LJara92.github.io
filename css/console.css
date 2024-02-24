@@ -37,14 +37,13 @@ header{
     align-items: center;
     margin: auto;
     margin-top: 7%;
-    width: 60%;
+    width: auto;
     top: 0%;
     box-shadow: 0 0 6px 0 rgb(138, 138, 138);
     animation-name: modal;
     animation-duration: 1s;
     overflow: hidden;
     height: auto;
-    max-height: 90%;
     background-color: #000000;
     border-radius: 5px;
 }
